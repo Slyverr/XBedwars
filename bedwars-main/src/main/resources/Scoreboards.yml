@@ -1,0 +1,166 @@
+############################################################################
+##                        Scoreboard Configuration                        ##
+############################################################################
+##                                                                        ##
+##                             Specifications                             ##
+##                                                                        ##
+## - In newer versions of spigot (>= 1.13), scoreboards can only hold up  ##
+##          to 64 character. Older versions, only 16 character.           ##
+##                                                                        ##
+## - Waiting-Room & Game scoreboards supports per mode scoreboard preset  ##
+## as represented by the 'Game-Scoreboards' section, and also a 'Default' ##
+## key to specify a default scoreboard's preset to use for modes without  ##
+##                          any defined preset.                           ##
+############################################################################
+
+# Specifies the custom titles to use for scoreboards.
+Scoreboards-Titles:
+  # Specifies the name of the custom title.
+  Custom:
+    # Specifies the time to wait before updating the scoreboard again. Minimum is 5 or -1 to never update!
+    update-ticks: -1
+    # Specifies the titles.
+    titles:
+      - '&e&lBED WARS'
+
+# Controls the content and the title of scoreboards. If the title isn't specified, the default bedwars title will be used!
+Scoreboards:
+  #                   Lobby Scoreboard
+  #
+  # Available placeholders:
+  #  %date% : Displays date (dd/mm/yy).
+  #
+  #  %level%        : Displays the bedwars level of the user.
+  #  %progress%     : Displays the progress of the user's bedwars level.
+  #  %progress:bar% : Displays the progress bar of the user.
+  #  %coins%        : Displays the amount of coins.
+  #
+  #  %statistic:games_played% : Displays the number of games played.
+  #  %statistic:beds_broken%  : Displays the number of beds broken.
+  #  %statistic:beds_lost%    : Displays the number of beds losses.
+  #  %statistic:kills%        : Displays the number of kills.
+  #  %statistic:deaths%       : Displays the number of deaths.
+  #  %statistic:final_kills%  : Displays the number of final-kills.
+  #  %statistic:final_deaths% : Displays the number of final-deaths.
+  #  %statistic:total_kills%  : Displays the number of final-kills in addition to normal kills.
+  #  %statistic:total_deaths% : Displays the number of final-deaths in addition to normal kills.
+  #  %statistic:wins%         : Displays the number of wins.
+  #  %statistic:losses%       : Displays the number of losses.
+  #  %statistic:winstreak%    : Displays the winstreak.
+  Lobby-Scoreboard:
+    Lines:
+      - ''
+      - '%level%'
+      - ''
+      - '%progress%'
+      - '%progress:bar%'
+      - ''
+      - '%coins%'
+      - ''
+      - '%statistic:total_kills%'
+      - '%statistic:wins%'
+      - ''
+      - '&ewww.server.net'
+
+  #                   Waiting-Room Scoreboards
+  #
+  # Available placeholders:
+  #   %date% : Displays the date (dd/mm/yy).
+  #
+  #   %players_status% : Displays the number of players in the waiting-room compared to the maximum possible.
+  #   %waiting_status% : Displays the status of waiting-room (Countdown).
+  #   %version%        : Displays the version of the plugin.
+  #
+  #   %mode:comp% : Displays the composition of teams. (Ex. 2v2v2v2)
+  #   %mode%      : Displays the mode of the game.
+  #   %map%       : Displays the name of the map.
+  Waiting-Room-Scoreboards:
+    # Specifies the default scoreboard.
+    Default:
+      Lines:
+        - '&7%date%'
+        - ''
+        - '%map%'
+        - '%players_status%'
+        - ''
+        - '%waiting_status%'
+        - ''
+        - '%mode%'
+        - '%version%'
+        - ''
+        - '&ewww.server.net'
+    Custom:
+      Modes: [ Trio, Quad ]
+      Lines:
+        - '&7%date%'
+        - ''
+        - '%map%'
+        - '%players_status%'
+        - ''
+        - '%waiting_status%'
+        - ''
+        - '%mode:comp%'
+        - '%version%'
+        - ''
+        - '&ewww.server.net'
+
+  #                   Game Scoreboards
+  #
+  # Available placeholders:
+  #   %date%  : Displays date (dd/mm/yy).
+  #   %phase% : Displays the next phase and the time left for it.
+  #
+  #   %team:red:status%    : Displays the status of red team.
+  #   %team:blue:status%   : Displays the status of blue team.
+  #   %team:green:status%  : Displays the status of green team.
+  #   %team:yellow:status% : Displays the status of yellow team.
+  #   %team:aqua:status%   : Displays the status of aqua team.
+  #   %team:white:status%  : Displays the status of white team.
+  #   %team:pink:status%   : Displays the status of pink team.
+  #   %team:gray:status%   : Displays the status of gray team.
+  #
+  #   %statistic:kills%       : Displays the number of kills.
+  #   %statistic:deaths%      : Displays the number of deaths.
+  #   %statistic:final_kills% : Displays the number of final-kills.
+  #   %statistic:beds_broken% : Displays the number of beds broken.
+  Game-Scoreboards:
+    # Specifies the default scoreboard.
+    Default:
+      Title: Custom
+      Lines:
+        - '&7%date%'
+        - ''
+        - '%phase%'
+        - ''
+        - '%team:red:status%'
+        - '%team:blue:status%'
+        - '%team:green:status%'
+        - '%team:yellow:status%'
+        - '%team:aqua:status%'
+        - '%team:white:status%'
+        - '%team:pink:status%'
+        - '%team:gray:status%'
+        - ''
+        - '&ewww.server.net'
+
+    Custom:
+      # Specifies the title to use for this scoreboard.
+      Title: Custom
+      # Specifies the modes that will use this scoreboard.
+      Modes: [ 3v3v3v3, 4v4v4v4 ]
+      # Specifies the lines of this scoreboard.
+      Lines:
+        - '&7%date%'
+        - ''
+        - '%phase%'
+        - ''
+        - '%team:red:status%'
+        - '%team:blue:status%'
+        - '%team:green:status%'
+        - '%team:yellow:status%'
+        - ''
+        - '%statistic:kills%'
+        - '%statistic:final_kills%'
+        - '%statistic:beds_broken%'
+        - ''
+        - '&ewww.server.net'

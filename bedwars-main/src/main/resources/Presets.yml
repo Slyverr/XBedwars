@@ -1,0 +1,105 @@
+################################################################
+##                    Preset Configuration                    ##
+################################################################
+
+# Customize the presets of a tiered resource generator. You can create your custom preset as follows:
+#
+# {preset_name}:
+#   tier-{number}:
+#     title: The title to display the tier by in the generator.
+#     drops-time: The time to wait between each drop (in seconds).
+#     drops-limit: The maximum number of drops in the generator's area.
+#
+Tiered-Resource-Generator-Presets:
+  Diamond:Low:
+    tier-1:
+      title:
+        EN: '&eTier &cI'
+      drops-time: 30
+      drops-limit: 4
+    tier-2:
+      title:
+        EN: '&eTier &cII'
+      drops-time: 23
+      drops-limit: 4
+    tier-3:
+      title:
+        EN: '&eTier &cIII'
+      drops-time: 12
+      drops-limit: 4
+  Diamond:High:
+    tier-1:
+      title:
+        EN: '&eTier &cI'
+      drops-time: 30
+      drops-limit: 8
+    tier-2:
+      title:
+        EN:'&eTier &cII'
+      drops-time: 23
+      drops-limit: 8
+    tier-3:
+      title:
+        EN: '&eTier &cIII'
+      drops-time: 12
+      drops-limit: 8
+  Emerald:Low:
+    tier-1:
+      title:
+        EN: '&eTier &cI'
+      drops-time: 60
+      drops-limit: 2
+    tier-2:
+      title:
+        EN: '&eTier &cII'
+      drops-time: 45
+      drops-limit: 2
+    tier-3:
+      title:
+        EN: '&eTier &cIII'
+      drops-time: 30
+      drops-limit: 2
+  Emerald:High:
+    tier-1:
+      title:
+        EN: '&eTier &cI'
+      drops-time: 60
+      drops-limit: 4
+    tier-2:
+      title:
+        EN: '&eTier &cII'
+      drops-time: 45
+      drops-limit: 4
+    tier-3:
+      title:
+        EN: '&eTier &cIII'
+      drops-time: 30
+      drops-limit: 4
+
+# Customize the presets of a teams resource generator. You can create your custom preset as follows:
+#
+# {preset_name}:
+#   {resource}:
+#     drops-per-minute: The number of drops to drop per minute.
+#     drops-limit: The maximum number of drops in the generator's area.
+#     drops-split: Whether to split this resource or not.
+#
+Team-Resource-Generator-Presets:
+  Slow:
+    Iron:
+      drops-per-minute: 36
+      drops-limit: 48
+      drops-split: true
+    Gold:
+      drops-per-minute: 12
+      drops-limit: 12
+      drops-split: true
+  Fast:
+    Iron:
+      drops-per-minute: 48
+      drops-limit: 48
+      drops-split: true
+    Gold:
+      drops-per-minute: 16
+      drops-limit: 12
+      drops-split: true

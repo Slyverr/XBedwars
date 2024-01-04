@@ -1,0 +1,399 @@
+################################################################
+##                   ItemShop Configuration                   ##
+################################################################
+
+# Specifies the available purchasables for all item's shops. You can create your own purchasable by following their unique patterns!
+Shop-Purchasables:
+  # Blocks
+  Wool:
+    purchasable-type: ITEM
+    purchasable-item: WHITE_WOOL
+    purchasable-amount: 16
+    purchasable-cost: 4 IRON
+    purchasable-description:
+      EN: Great for bridging across\nislands. Turns into your team's\ncolor.
+  Hardened Clay:
+    purchasable-type: ITEM
+    purchasable-item: TERRACOTTA
+    purchasable-amount: 16
+    purchasable-cost: 12 IRON
+    purchasable-description:
+      EN: Basic block to defend your bed.
+  Wood:
+    purchasable-type: ITEM
+    purchasable-item: OAK_PLANKS
+    purchasable-amount: 16
+    purchasable-cost: 4 Gold
+    purchasable-description:
+      EN: Good block to defend your bed.\nStrong against pickaxes.
+  Blast Proof Glass:
+    purchasable-type: ITEM
+    purchasable-item: WHITE_STAINED_GLASS
+    purchasable-amount: 4
+    purchasable-cost: 12 IRON
+    purchasable-description:
+      EN: Immune to explosions.
+  Endstone:
+    purchasable-type: ITEM
+    purchasable-item: END_STONE
+    purchasable-amount: 12
+    purchasable-cost: 24 IRON
+    purchasable-description:
+      EN: Solid Block to defend your bed.
+  Ladders:
+    purchasable-type: ITEM
+    purchasable-item: LADDER
+    purchasable-amount: 8
+    purchasable-cost: 4 IRON
+    purchasable-description:
+      EN: Useful to cancel fall damage.
+  Obsidian:
+    purchasable-type: ITEM
+    purchasable-item: Obsidian
+    purchasable-amount: 4
+    purchasable-cost: 4 EMERALD
+    purchasable-description:
+      EN: Extreme protection for your bed.
+
+  # Weapons
+  Stone Sword:
+    purchasable-type: ITEM
+    purchasable-item: STONE_SWORD
+    purchasable-unbreakable: true
+    purchasable-amount: 1
+    purchasable-cost: 10 IRON
+  Iron Sword:
+    purchasable-type: ITEM
+    purchasable-item: IRON_SWORD
+    purchasable-unbreakable: true
+    purchasable-amount: 1
+    purchasable-cost: 7 GOLD
+  Diamond Sword:
+    purchasable-type: ITEM
+    purchasable-item: DIAMOND_SWORD
+    purchasable-unbreakable: true
+    purchasable-amount: 1
+    purchasable-cost:
+      Default: 4 EMERALD
+      3v3v3v3: 3 EMERALD
+      4v4v4v4: 3 EMERALD
+  Knockback Stick:
+    purchasable-name: Knockback Stick
+    purchasable-type: ITEM
+    purchasable-item: STICK
+    purchasable-amount: 1
+    purchasable-enchantments:
+      - Knockback:1
+    purchasable-cost: 5 GOLD
+
+  # Armors
+  Chain Armor:
+    purchasable-name: Permanent Chainmail Armor (Leggings + Boots)
+    purchasable-type: ARMOR
+    purchasable-armor: CHAIN
+    purchasable-cost: 40 IRON
+    purchasable-description:
+      EN: Chaimail leggings and boots\nwhich you will always spawn\nwith.
+  Iron Armor:
+    purchasable-name: Permanent Iron Armor
+    purchasable-type: ARMOR
+    purchasable-armor: Iron
+    purchasable-cost: 12 GOLD
+    purchasable-description:
+      EN: Iron leggings and boots\nwhich you will always spawn\nwith.
+  Diamond Armor:
+    purchasable-name: Permanent Diamond Armor
+    purchasable-type: ARMOR
+    purchasable-armor: Diamond
+    purchasable-cost: 6 EMERALD
+    purchasable-description:
+      EN: Diamond leggings and boots\nwhich you will always spawn\nwith.
+
+  # Tools
+  Tiered Axe:
+    purchasable-type: TIERED
+    purchasable-tiers:
+      Wooden Axe:
+        purchasable-item: WOODEN_AXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:1
+        purchasable-cost: 10 IRON
+      Stone Axe:
+        purchasable-item: STONE_AXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:1
+        purchasable-cost: 10 IRON
+      Iron Axe:
+        purchasable-item: IRON_AXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:2
+        purchasable-cost: 3 GOLD
+      Diamond Axe:
+        purchasable-item: DIAMOND_AXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:3
+        purchasable-cost: 6 GOLD
+  Tiered Pickaxe:
+    purchasable-type: TIERED
+    purchasable-tiers:
+      Wooden Pickaxe:
+        purchasable-item: WOODEN_PICKAXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:1
+        purchasable-cost: 10 IRON
+      Iron Pickaxe:
+        purchasable-item: STONE_PICKAXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:2
+        purchasable-cost: 10 IRON
+      Gold Pickaxe:
+        purchasable-item: GOLDEN_PICKAXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:3
+          - Sharpness:2
+        purchasable-cost: 3 GOLD
+      Diamond Pickaxe:
+        purchasable-item: DIAMOND_PICKAXE
+        purchasable-unbreakable: true
+        purchasable-enchantments:
+          - Efficiency:3
+        purchasable-cost: 6 GOLD
+  Shears:
+    purchasable-type: ITEM
+    purchasable-item: SHEARS
+    purchasable-unbreakable: true
+    purchasable-permanent: true
+    purchasable-cost: 20 IRON
+    purchasable-description:
+      EN: Great to get rid of wool. You\nwill always spawn with these\nshears.
+
+  # Ranged
+  Bow:
+    purchasable-type: ITEM
+    purchasable-item: BOW
+    purchasable-unbreakable: true
+    purchasable-cost: 12 GOLD
+  Power Bow:
+    purchasable-name: Bow (Power I)
+    purchasable-type: ITEM
+    purchasable-item: BOW
+    purchasable-unbreakable: true
+    purchasable-enchantments:
+      - Power:1
+    purchasable-cost: 20 GOLD
+  Power-Punch Bow:
+    purchasable-name: Bow (Power I, Punch I)
+    purchasable-type: ITEM
+    purchasable-item: BOW
+    purchasable-unbreakable: true
+    purchasable-enchantments:
+      - Power:1
+      - Punch:1
+    purchasable-cost: 6 EMERALD
+  Arrow:
+    purchasable-name: Arrows
+    purchasable-type: ITEM
+    purchasable-item: ARROW
+    purchasable-amount: 6
+    purchasable-cost: 2 GOLD
+
+  # Potions
+  Speed Potion:
+    purchasable-name: Speed II Potion
+    purchasable-type: POTION
+    purchasable-effect: SPEED
+    purchasable-level: 1
+    purchasable-duration: 45
+    purchasable-particles: true
+    purchasable-cost: 1 EMERALD
+    purchasable-description:
+      EN: '&9Speed II (0:45).'
+  Jump Potion:
+    purchasable-name: Jump Boost V Potion
+    purchasable-type: POTION
+    purchasable-effect: JUMP
+    purchasable-level: 5
+    purchasable-duration: 45
+    purchasable-particles: true
+    purchasable-cost: 1 EMERALD
+    purchasable-description:
+      EN: '&9Jump Boost V (0:45).'
+  Invisibility Potion:
+    purchasable-name: Invisibility II Potion
+    purchasable-type: POTION
+    purchasable-effect: INVISIBILITY
+    purchasable-level: 2
+    purchasable-duration: 30
+    purchasable-particles: false
+    purchasable-cost: 2 EMERALD
+    purchasable-description:
+      EN: '&9Complete Invisibility (0:30).'
+
+  # Utilities
+  Golden Apple:
+    purchasable-name: ''
+    purchasable-type: ITEM
+    purchasable-item: GOLDEN_APPLE
+    purchasable-cost: 3 GOLD
+    purchasable-description:
+      EN: Healthy food.
+  BedBug Snowball:
+    purchasable-name: 'Bedbug'
+    purchasable-type: ENTITY
+    purchasable-entity: Bed Bug
+    purchasable-cost: 30 IRON
+    purchasable-description:
+      EN: Spawns a silverfish where the\nsnowball lands to distract your\nenemies.
+  BodyGuard SpawnEgg:
+    purchasable-name: 'Dream Defender'
+    purchasable-type: ENTITY
+    purchasable-entity: Body Guard
+    purchasable-cost: 120 IRON
+    purchasable-description:
+      EN: Spawns an iron golem to\nhelp defend your base.
+  Fireball:
+    purchasable-type: ITEM
+    purchasable-item: FIRE_CHARGE
+    purchasable-cost: 40 IRON
+    purchasable-description:
+      EN: Right-Click to launch! Great to\nknock enemies walking on\nthin bridges.
+  TNT:
+    purchasable-type: ITEM
+    purchasable-item: TNT
+    purchasable-cost:
+      Default: 4 GOLD
+      3v3v3v3: 8 GOLD
+      4v4v4v4: 8 GOLD
+    purchasable-description:
+      EN: Instantly ignites, appropriate\nto explode things!
+  Ender Pearl:
+    purchasable-type: ITEM
+    purchasable-item: ENDER_PEARL
+    purchasable-cost: 4 EMERALD
+    purchasable-description:
+      EN: The quickest way to invade enemy\nbases.
+  Water Bucket:
+    purchasable-type: ITEM
+    purchasable-item: WATER_BUCKET
+    purchasable-cost:
+      Default: 3 GOLD
+      3v3v3v3: 6 GOLD
+      4v4v4v4: 6 GOLD
+    purchasable-description:
+      EN: Great to slow down approaching\nenemies. Can also protect against TNT.
+  Bridge Egg:
+    purchasable-type: ITEM
+    purchasable-item: EGG
+    purchasable-cost: 1 EMERALD
+    purchasable-description:
+      EN: This egg creates a bridge in its\ntrail after being thrown.
+  Magic Milk:
+    purchasable-type: ITEM
+    purchasable-item: MILK_BUCKET
+    purchasable-cost: 4 GOLD
+    purchasable-description:
+      EN: Avoid triggering traps for 30\nseconds after consuming.
+  Sponge:
+    purchasable-name: 'Sponge'
+    purchasable-type: ITEM
+    purchasable-item: Sponge
+    purchasable-amount: 4
+    purchasable-cost:
+      Default: 3 GOLD
+      3v3v3v3: 6 GOLD
+      4v4v4v4: 6 GOLD
+    purchasable-description:
+      EN: Great for soaking up water.
+
+# Specifies the available categories and their data.
+Shop-Categories:
+  # Specifies the custom categories with their icon and names.
+  Categories:
+    Blocks:
+      Display-Icon: TERRACOTTA
+      Display-Name:
+        EN: Blocks
+    Weapons:
+      Display-Icon: GOLDEN_SWORD
+      Display-Name: Weapons
+    Armour:
+      Display-Icon: CHAINMAIL_BOOTS
+      Display-Name: Armour
+    Tools:
+      Display-Icon: STONE_PICKAXE
+      Display-Name: Tools
+    Ranged:
+      Display-Icon: BOW
+      Display-Name: Ranged
+    Potions:
+      Display-Icon: BREWING_STAND
+      Display-Name: Potions
+    Utilities:
+      Display-Icon: TNT
+      Display-Name: Utilities
+
+  # Specifies the custom categories and their order either globally or per mode.
+  #
+  # Usage: '{mode}: [ category_1, category_2, ... ]'
+  Categories-Order:
+    # Specifies the default categories to use for modes with undefined categories.
+    Default: [ Blocks, Weapons, Armour, Tools, Ranged, Potions, Utilities ]
+
+# Specifies the content of categories. The range of slots is between 1 and 21!
+#
+# You can also specify per mode purchasables:
+#
+# Slot-{number}:
+#   {mode_1}: {purchasable_name}
+#   {mode_2}: {purchasable_name}
+#
+Shop-Content:
+  Blocks:
+    Slot-1: Wool
+    Slot-2: Hardened Clay
+    Slot-3: Wood
+    Slot-4: Blast Proof Glass
+    Slot-5: Endstone
+    Slot-6: Ladders
+    Slot-7: Obsidian
+  Weapons:
+    Slot-1: Stone Sword
+    Slot-2: Iron Sword
+    Slot-3: Diamond Sword
+    Slot-4: Knockback Stick
+  Armour:
+    Slot-1: Chain Armor
+    Slot-2: Iron Armor
+    Slot-3: Diamond Armor
+  Tools:
+    Slot-1: Shears
+    Slot-2: Tiered Pickaxe
+    Slot-3: Tiered Axe
+  Ranged:
+    Slot-1: Bow
+    Slot-2: Power Bow
+    Slot-3: Power-Punch Bow
+    Slot-4: Arrow
+  Potions:
+    Slot-1: Speed Potion
+    Slot-2: Jump Potion
+    Slot-3: Invisibility Potion
+  Utilities:
+    Slot-1: Golden Apple
+    Slot-2: BodyGuard SpawnEgg
+    Slot-3: BedBug Snowball
+    Slot-4: Fireball
+    Slot-5: TNT
+    Slot-6: Ender Pearl
+    Slot-7: Water Bucket
+    Slot-8: Bridge Egg
+    Slot-9: Magic Milk
+    Slot-10: Sponge
+    Slot-11: Pop-up Tower

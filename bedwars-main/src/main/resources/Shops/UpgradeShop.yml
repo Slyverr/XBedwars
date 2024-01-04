@@ -1,0 +1,185 @@
+#################################################################
+##                  UpgradeShop Configuration                  ##
+#################################################################
+
+# Controls some settings of the shop.
+Shop-Settings:
+  # Controls the cost of traps based on the quantity purchased and also indicates the maximum number of traps a team can have. You can specify per mode costs!
+  Traps Costs: [ 1 DIAMOND, 2 DIAMOND, 4 DIAMOND ]
+
+# Specifies the available purchasables for all upgrade's shops. You can create your own purchasable by following their unique patterns!
+Shop-Purchasables:
+  # Upgrades
+  Sharpness:
+    purchasable-name:
+      EN: Sharpened Swords
+    purchasable-type: UPGRADE
+    purchasable-upgrade: Sharpness
+    purchasable-icon: IRON_SWORD
+    purchasable-cost:
+      Default: 4 DIAMOND
+      3v3v3v3: 8 GOLD
+      4v4v4v4: 8 GOLD
+    purchasable-description:
+      EN: Your team permanently gains\nSharpness I on all swords and axes!
+  Protection:
+    purchasable-name: Protection Upgrade
+    purchasable-type: TIERED
+    purchasable-icon: IRON_CHESTPLATE
+    purchasable-upgrade: Protection
+    purchasable-tiers:
+      Protection I:
+        purchasable-name:
+          EN: Protection I
+        purchasable-cost:
+          Default: 2 DIAMOND
+          3v3v3v3: 4 DIAMOND
+          4v4v4v4: 4 DIAMOND
+      Protection II:
+        purchasable-name: Protection II
+        purchasable-cost:
+          Default: 4 DIAMOND
+          3v3v3v3: 8 DIAMOND
+          4v4v4v4: 8 DIAMOND
+      Protection III:
+        purchasable-name: Protection III
+        purchasable-cost:
+          Default: 8 DIAMOND
+          3v3v3v3: 16 DIAMOND
+          4v4v4v4: 16 DIAMOND
+      Protection IV:
+        purchasable-name: Protection IV
+        purchasable-cost:
+          Default: 16 DIAMOND
+          3v3v3v3: 32 DIAMOND
+          4v4v4v4: 32 DIAMOND
+    purchasable-description:
+      EN: Your team permanently gains\nProtection on all armor pieces!
+  Maniac Miner:
+    purchasable-type: TIERED
+    purchasable-icon: GOLDEN_PICKAXE
+    purchasable-upgrade: Maniac Miner
+    purchasable-tiers:
+      Haste I:
+        purchasable-name: Haste I
+        purchasable-cost: 2 DIAMOND
+      Haste II:
+        purchasable-name: Haste II
+        purchasable-cost: 4 DIAMOND
+    purchasable-description:
+      EN: Your team permanently gains\nHaste!
+  Boss Buff:
+    purchasable-type: UPGRADE
+    purchasable-icon: DRAGON_EGG
+    purchasable-upgrade: Boss Buff
+    purchasable-cost: 5 DIAMOND
+    purchasable-description:
+      EN: Your team will have 2 bosses\ninstead of 1 during deathmatch.
+  Heal Pool:
+    purchasable-type: UPGRADE
+    purchasable-icon: BEACON
+    purchasable-upgrade: Heal Pool
+    purchasable-cost:
+      Default: 1 DIAMOND
+      3v3v3v3: 3 DIAMOND
+      4v4v4v4: 3 DIAMOND
+    purchasable-description:
+      EN: Creates a Regeneration field\naround your base!
+  Forge:
+    purchasable-type: TIERED
+    purchasable-icon: FURNACE
+    purchasable-upgrade: Forge
+    purchasable-tiers:
+      Iron Forge:
+        purchasable-name: Iron Forge
+        purchasable-cost:
+          Default: 2 DIAMOND
+          3v3v3v3: 4 DIAMOND
+          4v4v4v4: 4 DIAMOND
+      Gold Forge:
+        purchasable-name: Gold Forge
+        purchasable-cost:
+          Default: 4 DIAMOND
+          3v3v3v3: 8 DIAMOND
+          4v4v4v4: 8 DIAMOND
+      Emerald Forge:
+        purchasable-name: Emerald Forge
+        purchasable-cost:
+          Default: 6 DIAMOND
+          3v3v3v3: 12 DIAMOND
+          4v4v4v4: 12 DIAMOND
+      Molten Forge:
+        purchasable-name: Molten Forge
+        purchasable-cost:
+          Default: 8 DIAMOND
+          3v3v3v3: 16 DIAMOND
+          4v4v4v4: 16 DIAMOND
+    purchasable-description:
+      EN: Upgrade resource spawning on\nyour island.
+
+  # Traps
+  Counter Offensive:
+    purchasable-name: Counter-Offensive Trap
+    purchasable-type: TRAP
+    purchasable-icon: FEATHER
+    purchasable-trap: Counter Offensive
+    purchasable-description:
+      EN: Grants Speed II and Jump Boost\nII for 15 seconds to allied players\nnear your base.
+  Mining Fatigue:
+    purchasable-name: Miner Fatigue Trap
+    purchasable-type: TRAP
+    purchasable-icon: IRON_PICKAXE
+    purchasable-trap: Mining Fatigue
+    purchasable-description:
+      EN: Inflicts Mining Fatigue for 10\nseconds.
+  Blindness:
+    purchasable-name: It's a trap!
+    purchasable-type: TRAP
+    purchasable-icon: TRIPWIRE_HOOK
+    purchasable-trap: Blindness
+    purchasable-description:
+      EN: Inflicts Blindness and Slowness for 8 seconds.
+  Alarm:
+    purchasable-name: Alarm Trap
+    purchasable-type: TRAP
+    purchasable-icon: REDSTONE_TORCH
+    purchasable-trap: Alarm
+    purchasable-description:
+      EN: Reveals invisible players as\nwell as their name and team.
+
+# Specifies the content and the display item of custom categories.
+Shop-Categories:
+  # Specifies the display item of custom categories.
+  Categories:
+    Custom:
+      Display-Icon: NETHER_STAR
+      Display-Name:
+        EN: Custom Category
+
+  # Specifies the content of the custom categories.
+  Categories-Content:
+    Custom:
+      Slot-1: Sharpness
+
+# Specifies the content of the main category. The range of slots is between 1 and 21!
+#
+# You can also specify per mode purchasables:
+#
+# Slot-{number}:
+#   {mode_1}: {purchasable_name / category_name}
+#   {mode_2}: {purchasable_name / category_name}
+#
+Shop-Content:
+  Slot-8: Sharpness
+  Slot-9: Protection
+  Slot-10: Maniac Miner
+
+  Slot-12: Blindness
+  Slot-13: Counter Offensive
+  Slot-14: Alarm
+
+  Slot-15: Forge
+  Slot-16: Heal Pool
+  Slot-17: Boss Buff
+
+  Slot-19: Mining Fatigue

@@ -1,0 +1,145 @@
+################################################################
+##                   Prestige Configuration                   ##
+################################################################
+
+# Specifies the default prestige for new users.
+Default: Stone Prestige
+
+# Specifies the available custom prestiges. You can add/customize as many prestiges as you want!
+Prestiges:
+  # Range: 1-999
+  Stone Prestige:
+    # The display name of the prestige.
+    prestige-name: '&7Stone Prestige'
+    # The formats of the prestige.
+    prestige-formats:
+      # The chat's format of the prestige.
+      chat: '&7[**✫]'
+      # The scoreboard's format of the prestige.
+      scoreboard: '&7**✫'
+    # The level range of the prestige.
+    prestige-range: 1-99
+  Iron Prestige:
+    prestige-name: '&fIron Prestige'
+    prestige-formats:
+      chat: '&f[***✫]'
+      scoreboard: '&f***✫'
+    prestige-range: 100-199
+  Gold Prestige:
+    prestige-name: '&6Gold Prestige'
+    prestige-formats:
+      chat: '&6[***✫]'
+      scoreboard: '&6***✫'
+    prestige-range: 200-299
+  Diamond Prestige:
+    prestige-name: '&bDiamond Prestige'
+    prestige-formats:
+      chat: '&b[***✫]'
+      scoreboard: '&b***✫'
+    prestige-range: 300-399
+  Emerald Prestige:
+    prestige-name: '&2Emerald Prestige'
+    prestige-formats:
+      chat: '&2[***✫]'
+      scoreboard: '&2***✫'
+    prestige-range: 400-499
+  Sapphire Prestige:
+    prestige-name: '&3Sapphire Prestige'
+    prestige-formats:
+      chat: '&3[***✫]'
+      scoreboard: '&3***✫'
+    prestige-range: 500-599
+  Ruby Prestige:
+    prestige-name: '&4Ruby Prestige'
+    prestige-formats:
+      chat: '&4[***✫]'
+      scoreboard: '&4***✫'
+    prestige-range: 600-699
+  Crystal Prestige:
+    prestige-name: '&dCrystal Prestige'
+    prestige-formats:
+      chat: '&d[***✫]'
+      scoreboard: '&d***✫'
+    prestige-range: 700-799
+  Opal Prestige:
+    prestige-name: '&1Opal Prestige'
+    prestige-formats:
+      chat: '&1[***✫]'
+      scoreboard: '&1***✫'
+    prestige-range: 800-899
+  Amethyst Prestige:
+    prestige-name: '&5Amethyst Prestige'
+    prestige-formats:
+      chat: '&5[***✫]'
+      scoreboard: '&5***✫'
+    prestige-range: 900-999
+
+  # Range: 1000-1999
+  Rainbow Prestige:
+    prestige-name: '&cR&6a&ei&an&bb&o&5w Prestige'
+    prestige-formats:
+      chat: '&c[&6*&e*&a*&b*&d✫&5]'
+      scoreboard: '&6*&e*&a*&b*&d✫'
+    prestige-range: 1000-1099
+  Iron Prime Prestige:
+    prestige-name: '&7I&fron &7Pr&fime Prestige'
+    prestige-formats:
+      chat: '&7[&f****&7✪]'
+      scoreboard: '&f****&7✪'
+    prestige-range: 1100-1199
+  Gold Prime Prestige:
+    prestige-name: '&eGold Prime Prestige'
+    prestige-formats:
+      chat: '&7[&e****&6✪&7]'
+      scoreboard: '&e****&6✪'
+    prestige-range: 1200-1299
+  Diamond Prime Prestige:
+    prestige-name: '&bDiamond Prime Prestige'
+    prestige-formats:
+      chat: '&7[&b****&3✪&7]'
+      scoreboard: '&b****&3✪'
+    prestige-range: 1300-1399
+  Emerald Prime Prestige:
+    prestige-name: '&aEmerald Prime Prestige'
+    prestige-formats:
+      chat: '&7[&a****&2✪&7]'
+      scoreboard: '&a****&2✪'
+    prestige-range: 1400-1499
+  Sapphire Prime Prestige:
+    prestige-name: '&3Sapphire Prime Prestige'
+    prestige-formats:
+      chat: '&7[&3****&9✪&7]'
+      scoreboard: '&3****&9✪'
+    prestige-range: 1500-1599
+  Ruby Prime Prestige:
+    prestige-name: '&cRuby Prime Prestige'
+    prestige-formats:
+      chat: '&7[&c****&4✪&7]'
+      scoreboard: '&c****&4✪'
+    prestige-range: 1600-1699
+  Crystal Prime Prestige:
+    prestige-name: '&dCrystal Prime Prestige'
+    prestige-formats:
+      chat: '&7[&d****&5✪&7]'
+      scoreboard: '&d****&5✪'
+    prestige-range: 1700-1799
+  Opal Prime Prestige:
+    prestige-name: '&9Opal Prime Prestige'
+    prestige-formats:
+      chat: '&7[&9****&1✪&7]'
+      scoreboard: '&9****&1✪'
+    prestige-range: 1800-1899
+  Amethyst Prime Prestige:
+    prestige-name: '&5Amethyst Prime Prestige'
+    prestige-formats:
+      chat: '&7[&5****&8✪&7]'
+      scoreboard: '&5****&8✪&7'
+    prestige-range: 1900-1999
+
+  # Range: 2000-2999
+  Mirror Prestige:
+    prestige-name: '&8M&7i&frr&7or Prestige'
+    prestige-formats:
+      chat: '&8[&7*&f**&7*✪&8]'
+      scoreboard: '&7*&f**&7*✪'
+    prestige-range: 2000-2099
