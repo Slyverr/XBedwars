@@ -1,0 +1,58 @@
+main: com.slyvr.xbedwars.Bedwars
+name: XBedwars
+author: Slyverr
+version: ${plugin.version}
+api-version: 1.13
+
+description: Defend your bed, destroy others', and be the last team standing.
+
+commands:
+  Bedwars:
+    aliases: [ bw ]
+    description: The main xbedwars command!
+  Rejoin:
+    description: Used to rejoin a game back!
+  Shout:
+    description: Used to shout in a game!
+  Play:
+    description: Used to join a random game!
+
+permissions:
+  bw.admin:
+    description: Allows the player to use all the xbedwars commands.
+  bw.setup:
+    description: Allows the player to use the setup commands.
+
+  bw.commands.play:
+    description: Allows the player to use the '/Play' command.
+  bw.commands.shout:
+    description: Allows the player to use the '/Shout' command.
+  bw.commands.rejoin:
+    description: Allows the player to use the '/Rejoin' command.
+  bw.commands.level:
+    description: Allows the player to use the '/bw setLevel' command.
+  bw.commands.progress:
+    description: Allows the player to use the '/bw setProgress' command.
+  bw.commands.stats:
+    description: Allows the player to use the '/bw stats' command.
+  bw.commands.stats.view:
+    description: Allows the player to use the '/bw viewStats' command.
+  bw.commands.lang:
+    description: Allows the player to use the '/bw lang(s)' commands.
+  bw.commands.maps:
+    description: Allows the player to use the '/bw maps' command.
+
+  bw.flags.chat:
+    description: Allows the player to bypass the chat restriction if set.
+  bw.flags.damage:
+    description: Allows the player to bypass the damage restriction if set.
+  bw.flags.block.break:
+    description: Allows the player to bypass the block breaking restriction if set.
+  bw.flags.block.place:
+    description: Allows the player to bypass the block placing restriction if set.
+  bw.flags.block.interact:
+    description: Allows the player to bypass the block interact restriction if set.
+  bw.flags.item.pickup:
+    description: Allows the player to bypass the item pickup restriction if set.
+  bw.flags.item.drop:
+    description: Allows the player to bypass the item drop restriction if set.

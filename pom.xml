@@ -4,9 +4,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.slyvr.bedwars</groupId>
-    <artifactId>bedwars-parent</artifactId>
+    <groupId>com.slyvr.xbedwars</groupId>
+    <artifactId>xbedwars-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+
+    <name>XBedwars-Parent</name>
+    <description>The</description>
 
     <packaging>pom</packaging>
 
@@ -27,29 +30,29 @@
     </build>
 
     <modules>
-        <module>bedwars-v1_8_R3</module>
-        <module>bedwars-v1_9_R1</module>
-        <module>bedwars-v1_9_R2</module>
-        <module>bedwars-v1_10_R1</module>
-        <module>bedwars-v1_11_R1</module>
-        <module>bedwars-v1_12_R1</module>
-        <module>bedwars-v1_13_R1</module>
-        <module>bedwars-v1_13_R2</module>
-        <module>bedwars-v1_14_R1</module>
-        <module>bedwars-v1_15_R1</module>
-        <module>bedwars-v1_16_R1</module>
-        <module>bedwars-v1_16_R2</module>
-        <module>bedwars-v1_16_R3</module>
-        <module>bedwars-v1_17_R1</module>
-        <module>bedwars-v1_18_R1</module>
-        <module>bedwars-v1_18_R2</module>
-        <module>bedwars-v1_19_R1</module>
-        <module>bedwars-v1_19_R2</module>
-        <module>bedwars-v1_19_R3</module>
-        <module>bedwars-v1_20_R1</module>
-        <module>bedwars-v1_20_R2</module>
-        <module>bedwars-v1_20_R3</module>
-        <module>bedwars-main</module>
+        <module>xbedwars-v1_8_R3</module>
+        <module>xbedwars-v1_9_R1</module>
+        <module>xbedwars-v1_9_R2</module>
+        <module>xbedwars-v1_10_R1</module>
+        <module>xbedwars-v1_11_R1</module>
+        <module>xbedwars-v1_12_R1</module>
+        <module>xbedwars-v1_13_R1</module>
+        <module>xbedwars-v1_13_R2</module>
+        <module>xbedwars-v1_14_R1</module>
+        <module>xbedwars-v1_15_R1</module>
+        <module>xbedwars-v1_16_R1</module>
+        <module>xbedwars-v1_16_R2</module>
+        <module>xbedwars-v1_16_R3</module>
+        <module>xbedwars-v1_17_R1</module>
+        <module>xbedwars-v1_18_R1</module>
+        <module>xbedwars-v1_18_R2</module>
+        <module>xbedwars-v1_19_R1</module>
+        <module>xbedwars-v1_19_R2</module>
+        <module>xbedwars-v1_19_R3</module>
+        <module>xbedwars-v1_20_R1</module>
+        <module>xbedwars-v1_20_R2</module>
+        <module>xbedwars-v1_20_R3</module>
+        <module>xbedwars-main</module>
         <module>dist</module>
     </modules>
 
