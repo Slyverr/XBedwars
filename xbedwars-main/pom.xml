@@ -61,7 +61,7 @@
     </dependencies>
 
     <build>
-        <defaultGoal>clean package install</defaultGoal>
+        <defaultGoal>clean package install:install</defaultGoal>
         <finalName>xbedwars v${project.parent.version}</finalName>
 
         <resources>
@@ -95,6 +95,17 @@
                         <link>https://hub.spigotmc.org/javadocs/spigot</link>
                     </links>
                 </configuration>
+
+                <executions>
+                    <execution>
+                        <id>generate-javadoc</id>
+                        <phase>package</phase>
+
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
 
             <plugin>
@@ -103,6 +114,8 @@
                 <version>3.5.0</version>
 
                 <configuration>
+                    <createDependencyReducedPom>true</createDependencyReducedPom>
+
                     <relocations>
                         <relocation>
                             <pattern>org.bstats</pattern>
@@ -127,8 +140,6 @@
                             </includes>
                         </filter>
                     </filters>
-                    
-                    <createDependencyReducedPom>false</createDependencyReducedPom>
                 </configuration>
 
                 <executions>

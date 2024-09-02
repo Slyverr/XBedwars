@@ -26,7 +26,7 @@
     </repositories>
 
     <build>
-        <defaultGoal>clean package install</defaultGoal>
+        <defaultGoal>clean package install:install</defaultGoal>
     </build>
 
     <modules>
