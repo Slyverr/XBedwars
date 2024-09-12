@@ -1,4 +1,4 @@
-main: com.slyvr.xbedwars.Bedwars
+main: com.slyvr.xbedwars.XBedwars
 name: XBedwars
 author: Slyverr
 version: ${plugin.version}
