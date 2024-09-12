@@ -116,7 +116,7 @@ public final class XBedwars extends JavaPlugin implements XBedwarsPlugin {
         try {
             Class.forName("org.spigotmc.SpigotConfig");
         } catch (ClassNotFoundException e) {
-            this.getLogger().info("Unsupported  implementation detected!");
+            this.getLogger().info("Unsupported implementation detected!");
             // this.getLogger().warning("Unsupported server implementation detected! Spigot-based server required.");
             this.disable = true;
             return;
@@ -188,7 +188,7 @@ public final class XBedwars extends JavaPlugin implements XBedwarsPlugin {
         this.loadUsers();
 
         logger.info("Detected NMS Version: " + version);
-        logger.info("xbedwars has been enabled!");
+        logger.info("XBedwars has been enabled!");
     }
 
     @Override
@@ -200,7 +200,7 @@ public final class XBedwars extends JavaPlugin implements XBedwarsPlugin {
                 worker.getThread().start();
         }
 
-        logger.info("Disabling xbedwars");
+        logger.info("Disabling XBedwars");
 
         logger.info("Shutting down running games!");
         XBedwarsGame.stopAll(true);
@@ -217,7 +217,7 @@ public final class XBedwars extends JavaPlugin implements XBedwarsPlugin {
         if (database != null)
             database.disconnect();
 
-        logger.info("xbedwars has been disabled!");
+        logger.info("XBedwars has been disabled!");
     }
 
     private void initMetrics() {
