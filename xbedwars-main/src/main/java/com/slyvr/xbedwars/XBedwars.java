@@ -338,7 +338,7 @@ public final class XBedwars extends JavaPlugin implements XBedwarsPlugin {
     private void registerUtilities() throws Exception {
         String package_path = "com.slyvr.xbedwars." + Version.getVersionName() + ".utils";
 
-        this.utils = (XBedwarsUtils) Class.forName(package_path + ".BedwarsUtils").getConstructor().newInstance();
+        this.utils = (XBedwarsUtils) Class.forName(package_path + ".XBedwarsUtils").getConstructor().newInstance();
         this.utils.register();
     }
 
