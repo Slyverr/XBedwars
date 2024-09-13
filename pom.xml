@@ -9,7 +9,7 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <name>XBedwars-Parent</name>
-    <description>The</description>
+    <description>The core project with all modules for the XBedwars plugin implementation.</description>
 
     <packaging>pom</packaging>
 
